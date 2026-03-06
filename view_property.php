@@ -31,14 +31,6 @@ $result = mysqli_query($conn, "SELECT * FROM properties");
 
 <h2 style="text-align:center; color:white;">Property Listings</h2>
 
-
-<!-- 2️⃣ SEARCH FORM GOES HERE -->
-<form method="GET">
-Search City:
-<input type="text" name="city">
-<input type="submit" value="Search">
-</form>
-
 <!-- 3️⃣ TOTAL COUNT GOES HERE -->
 <?php
 $count = mysqli_num_rows($result);
@@ -82,3 +74,4 @@ echo "<h3 style='text-align:center; color:white;'>Total Properties: $count</h3>"
 </html>
 <br><br>
 <a href="add_property.php">⬅ Back to Add Property</a>
+
